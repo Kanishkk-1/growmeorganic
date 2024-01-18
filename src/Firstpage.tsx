@@ -17,21 +17,22 @@ const Firstpage: React.FC = () => {
       const phoneNumber = phoneNumberRef.current.value;
       const email = emailRef.current.value;
 
-  if (name && phoneNumber && email) {
+      if (name && phoneNumber && email) {
         // Save data to localStorage
-        localStorage.setItem('userData', JSON.stringify({ name, phoneNumber, email}));
+        localStorage.setItem(
+          "userData",
+          JSON.stringify({ name, phoneNumber, email })
+        );
 
         // Redirect to the second page
-        history.push('/second-page');
+        history.push("/second-page");
       } else {
-        errorMessage('Please enter all details before proceeding.');
+        setErrorMessage("Please enter all details before proceeding.");
       }
     }
-    };
+  };
 
-  
-
-  console.log(localStorage.getItem("inputValue"), "****");
+  // console.log(localStorage.getItem("inputValue"), "****");
 
   return (
     <div>
@@ -43,12 +44,7 @@ const Firstpage: React.FC = () => {
 
         <label>Phone Number:</label>
         <input
-          ref={phoneNumberRef}
-          type="tel"
-          id="phoneNumber"
-          name="phoneNumber"
-          required
-        />
+          ref={phoneNumberRef} type="tel" id="phoneNumber" name="phoneNumber" required />
 
         <br />
 
