@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Third from "./Third";
+import Third2 from "./Third2"
 import Box from "@mui/material/Box";
 import {
   Table,
@@ -64,9 +66,10 @@ const DataList: React.FC = () => {
       </Box>
 
 
+<Third/>
+<Third2/>
 
 
-      
     </Container>
   );
 };
