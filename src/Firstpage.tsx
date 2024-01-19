@@ -1,6 +1,6 @@
-import React, { useRef, useState ,useEffect} from "react";
+import  { useRef, useState ,} from "react";
 import { useHistory} from "react-router-use-history";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const Firstpage: React.FC = () => {
